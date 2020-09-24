@@ -1,5 +1,5 @@
 #!/bin/bash
-# My first script - helloworld.sh
+# My first script file - helloworld.sh
 
 echo "Hello World!"
 echo "I am process # $$"

@@ -24,3 +24,5 @@ echo ""
 # commands to display a title
 # commands to make a list of the 12 biggest files
 # sort/format whatever to display the list properly
+echo "USER SIZE   NAME"
+find / -type f -printf "%u %k %P \n" 2>/dev/null | sort -n -k 2 -r | head -12

@@ -2,6 +2,6 @@
 # My second script file - helloworldtemplated.sh
 
 cat <<EOF
-Hellow World!
+Hello World!
 I am process # $$
 EOF

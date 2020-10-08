@@ -77,7 +77,9 @@
 
 #Variable creation
 CurHost=$(hostname)
-InterfaceName=$(ip a |awk '/: e/{gsub(/:/,"");print $2}')
+#InterfaceName=$(ip a |awk '/: e/{gsub(/:/,"");print $2}')
+#For lab 3
+InterfaceName="ens33"
 LanIP=$(ip a s $InterfaceName| awk '/inet /{gsub(/\/.*/,"");print $2}')
 LanName=$(getent hosts $LanIP| awk '{print $2}')
 ExtIP=$(curl -s icanhazip.com)
